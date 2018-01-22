@@ -1,0 +1,57 @@
+function buff(buff5,buff9){
+return  buff=[0xCC,0x80,0x80,0x80,0x80,buff5,0x40,0x40,0x40,buff9,0x33]
+}
+function speacialParameterArray_ABE(speacial1,speacial2){
+  return speacialParameterArray_ABE = [speacial1,speacial2,0,0,0,0,0];
+}
+
+function initControlData(){
+let  _heightGO = 0x80,
+     _leftRightGo = 0x80,
+     _forwardAfterwardGo = 0x80,
+     _leftRightGoRotation = 0x80;
+
+}
+
+
+function sendCommandData(){
+let speacial=0x00|speacialParameterArray[0]|(speacialParameterArray[1]<<1)|(speacialParameterArray[2]<<2)|(speacialParameterArray[3]<<3|speacialParameterArray[4]<<4|speacialParameterArray[5]<<5 | speacialParameterArray[6]<<6|speacialParameterArray[7]<<7 );
+    buff5 = speacial1,
+    buff9 = buff[1]^buff[2]^buff[3]^buff[4]^buff[5]^buff[6]^buff[7]^buff[8];
+}
+
+function takeoff(){
+return  let special1 = 1,
+      special2 =0;
+}
+
+function landing(){
+  return let special1 = 0,
+      special2 = 1;
+}
+
+function resetTakeoffOrlanding(){
+  return let speical1 = 0,
+      speical2 = 0;
+}
+function setHeightValue(value){
+  return _heightGo_Rotation = 0x80 + value;
+}
+
+function setLeftRightValue(value){
+  return _leftRightGo = 0x80 + value;
+}
+
+function setFrontAfterValue(value){
+  return _forwardAfterwardGo = 0x80 + value;
+}
+
+function restoreTheControlModel(value){
+  let _height = 0x80,
+      _leftRightGo = 0x80;
+      _forwardAfterwardGo = 0x80;
+      _leftRightGoRotation = 0x80;
+      buff[6] = 0x40;
+      buff[7] = 0x40;
+      buff[8] = 0x40;
+}
